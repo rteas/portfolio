@@ -6,6 +6,29 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --navbar-height: 45px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2b2b2b;
+  border-radius:3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e7e7e7;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +47,30 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.home-page{
+  height: calc(100vh - var(--navbar-height));
+  width: 100%;
+  background-color: gray;
+}
+
+.about-page{
+  height: calc(100vh - var(--navbar-height));
+  width: 100%;
+  background-color: greenyellow;
+}
+
+.project-page{
+  height: calc(100vh - var(--navbar-height));
+  width: 100%;
+  background-color: blueviolet;
+}
+
+.contact-page{
+  height: calc(100vh - var(--navbar-height));
+  width: 100%;
+  background-color: red;
 }
 
 @layer utilities {

@@ -1,5 +1,8 @@
+nav{
+    background-color: var(--navbar-color);
+    transition-duration: .5s;
+}
 .navbar{
-    background-color:cornflowerblue;
     position: sticky;
     top: 0;
     height: var(--navbar-height);
@@ -15,11 +18,20 @@
         margin-left: 20px;
     }
 
-    ul.nav-links {
+    div{
+        height: 100%;
         display: flex;
-        flex-direction: row;
-        column-gap: 20px;
-        margin-right: 20px;
+        ul.nav-links {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 20px;
+            margin-right: 20px;
+        }
     }
 
+}
+
+.transparent-nav {
+    background-color: rgba(0,0,0, 0) !important;
 }

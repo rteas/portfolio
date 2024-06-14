@@ -1,23 +1,23 @@
+'use client';
 import Image from "next/image";
-import NavBar from "./ui/navbar/navbar";
+import Home from "./ui/sections/home";
 
-export default function Home() {
+export default function Main() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      
-        <div className="home-page">
-          Home / Profile
-        </div>
-        <div className="about-page">
-          About / Hobbies
-        </div>
-        <div className="project-page">
-          Skills / Experience
-        </div>
-        <div className="contact-page">
-          Contact
-        </div>
-      
+    <main>
+      <section id="home" className="home-page">
+        <Home/>
+      </section>
+      <section id="about" className="about-page">
+        About / Hobbies
+      </section>
+      <section id="projects" className="project-page">
+        Skills / Experience
+      </section>
+      <section id="contact" className="contact-page">
+        Contact
+      </section>
     </main>
   );
 }
